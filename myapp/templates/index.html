@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Sign Up</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    {% if messages %}
+    <div class="messages">
+        {% for message in messages %}
+            <p class="{% if message.tags %}{{ message.tags }}{% endif %}">{{ message }}</p>
+        {% endfor %}
+    </div>
+{% endif %}
+
+    <div class="container right-panel-active">
+        <!-- Sign Up -->
+        <div class="container__form container--signup">
+            <form action="/signup/" class="form" id="form1" method="post">
+                {% csrf_token %}
+                <h2 class="form__title">Sign Up</h2>
+                <input type="text" placeholder="User" name="username" class="input" id="signupUser" />
+                <input type="password" placeholder="Password" name="password" class="input" id="signupPassword" />
+                <button class="btn">Sign Up</button>
+            </form>
+        </div>
+
+        <!-- Sign In -->
+        <div class="container__form container--signin">
+            <form action="/login/" class="form" id="form2" method ="post">
+                {% csrf_token %}
+                <h2 class="form__title">Sign In</h2>
+                <input type="text" placeholder="User" name="username" class="input" id="signinUser" />
+                <input type="password" placeholder="Password" name="password" class="input" id="signinPassword" />
+                <button class="btn" id="signInSubmit">Sign In</button>
+            </form>
+        </div>
+
+        <!-- Overlay -->
+        <div class="container__overlay">
+            <div class="overlay">
+                <div class="overlay__panel overlay--left">
+                    <button class="btn" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay__panel overlay--right">
+                    <button class="btn" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const signInBtn = document.getElementById("signIn");
+        const signUpBtn = document.getElementById("signUp");
+        const container = document.querySelector(".container");
+
+        signInBtn.addEventListener("click", () => {
+            container.classList.remove("right-panel-active");
+        });
+
+        signUpBtn.addEventListener("click", () => {
+            container.classList.add("right-panel-active");
+        });
+    </script>
+</body>
+
+</html>

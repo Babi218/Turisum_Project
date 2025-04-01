@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kolkata Food - Yahoo Kolkata</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/food.css' %}">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="/home/"><img src="{% static 'Media/Images/logo.png' %}" alt="Yahoo Kolkata logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/home/">Home</a></li>
+                <li><a href="/visiting/">Visiting Places</a></li>
+                <li><a href="/hotels/">Book Hotel & Travel Ticket</a></li>
+                <li><a href="/contact/">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Discover Kolkata's Famous Food</h2>
+        <p>Explore the rich flavors and culinary heritage of Kolkata.</p>
+    </section>
+
+    <section class="food-gallery">
+        <h3>Popular Dishes in Kolkata</h3>
+        <div class="food-grid">
+            <div class="food-item">
+                <img src="{% static 'Media/Images/rashogolla.webp' %}" alt="Rosogolla">
+                <h4>Rosogolla</h4>
+                <p>Sweet, spongy, and delightful syrup-filled dumplings that define Kolkata's dessert scene.</p>
+            </div>
+            <div class="food-item">
+                <img src="{% static 'Media/Images/Boyal_Macher_Jhol.jpg' %}" alt="Macher Jhol">
+                <h4>Macher Jhol</h4>
+                <p>A classic Bengali fish curry cooked with a flavorful blend of spices.</p>
+            </div>
+            <div class="food-item">
+                <img src="{% static 'Media/Images/kathiroll.jpg' %}" alt="Kathi Roll">
+                <h4>Kathi Roll</h4>
+                <p>A delicious wrap filled with spiced meat or vegetables, loved by everyone in Kolkata.</p>
+            </div>
+            <div class="food-item">
+                <img src="{% static 'Media/Images/maxresdefault.jpg' %}" alt="Shorshe Ilish">
+                <h4>Shorshe Ilish</h4>
+                <p>Hilsa fish prepared in a mustard sauce—a true delicacy of Kolkata cuisine.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Yahoo Kolkata. All Rights Reserved.</p>
+        <div>
+            <a href="privacy.html" style="color:white; text-decoration:none; margin-right:1rem;">Privacy Policy</a>
+            <a href="terms.html" style="color:white; text-decoration:none;">Terms of Service</a>
+        </div>
+    </footer>
+</body>
+</html>

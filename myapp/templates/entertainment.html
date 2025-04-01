@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Entertainment - Yahoo Kolkata</title>
+    {% load static %}
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/entertainment.css' %}"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="/home/">
+          <img
+            src="{% static 'Media/Images/logo.png' %}"
+            alt="Yahoo Kolkata logo" /></a
+        ><!-- Ensure it's a transparent PNG logo -->
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/home/">Home</a></li>
+          <li><a href="/visiting/">Visiting Places</a></li>
+          <li><a href="/hotels/">Book Hotel & Travel Ticket</a></li>
+          <li><a href="/entertainment/">Entertainment</a></li>
+          <li><a href="/contact/">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="entertainment">
+      <h2>Explore Entertainment in Kolkata</h2>
+      <p>
+        Kolkata offers a wide variety of entertainment options, from theaters
+        and cinemas to amusement parks.
+      </p>
+
+      <div class="entertainment-options">
+        <!-- Cinema Halls -->
+        <div class="entertainment-card">
+          <a
+            href="https://www.google.com/search?q=all+the+cinema+hall+in+kolkata&oq=all+the+cinema+hall+in+kolkata&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIICAEQABgWGB4yDQgCEAAYhgMYgAQYigUyDQgDEAAYhgMYgAQYigUyCggEEAAYgAQYogQyCggFEAAYgAQYogTSAQkxMDg4NWowajeoAgCwAgA&sourceid=chrome&ie=UTF-8"
+            target="_blank"
+            ><img
+              src="{% static 'Media/Images/nandan-west-bengal-film.jpg' %}"
+              alt="Cinema Halls"
+          /></a>
+          <h3>Cinema Halls</h3>
+          <p>
+            Enjoy the latest movies at Kolkata's renowned cinemas such as INOX,
+            Cinepolis, and Priya Cinema.
+          </p>
+        </div>
+
+        <!-- Theaters -->
+        <div class="entertainment-card">
+          <a
+            href="https://www.google.com/search?q=theater+hall+in+kolkata&sca_esv=31fe99a6d4a2597d&sxsrf=ADLYWILUpmGhzjl1e4ocIoZwkb5MbbU77w%3A1734622085951&ei=hTtkZ8XVOePh4-EPudn4kAk&oq=all+t+hall+in+kolkata&gs_lp=Egxnd3Mtd2l6LXNlcnAiFWFsbCB0IGhhbGwgaW4ga29sa2F0YSoCCAIyCBAAGIAEGKIEMggQABiABBiiBDIIEAAYgAQYogQyCBAAGIAEGKIESMg6UPECWL4IcAF4AZABAZgB0AKgAfkKqgEFMi0zLjK4AQHIAQD4AQGYAgOgAvgDwgIKEAAYsAMY1gQYR8ICBxAjGLACGCeYAwCIBgGQBgiSBwUxLjAuMqAH3w4&sclient=gws-wiz-serp"
+            target="_blank"
+            ><img src="{% static 'Media/Images/theater.jpg' %}" alt="Theaters"
+          /></a>
+          <h3>Theaters</h3>
+          <p>
+            Catch live performances at iconic venues like the Academy of Fine
+            Arts and Star Theatre.
+          </p>
+        </div>
+
+        <!-- Amusement Parks -->
+        <div class="entertainment-card">
+          <a
+            href="https://www.google.com/search?q=amusement+park+in+kolkata&sca_esv=31fe99a6d4a2597d&sxsrf=ADLYWILCdwQmO4LY21p11xcXECxrNWSvKQ%3A1734622257480&ei=MTxkZ935HOi84-EPibC_uQM&ved=0ahUKEwid1ue7k7SKAxVo3jgGHQnYLzcQ4dUDCBA&uact=5&oq=amusement+park+in+kolkata&gs_lp=Egxnd3Mtd2l6LXNlcnAiGWFtdXNlbWVudCBwYXJrIGluIGtvbGthdGEyBRAAGIAEMgUQABiABDIFEAAYgAQyBBAAGB4yBBAAGB4yBBAAGB4yBhAAGAUYHjIGEAAYBRgeMgYQABgFGB4yBhAAGAUYHkioJFC0F1ikHnACeAGQAQCYAawCoAHrCqoBBTItNC4xuAEDyAEA-AEBmAIEoAKWBMICChAAGLADGNYEGEfCAgcQABiABBgNwgIGEAAYDRgewgIIEAAYBRgNGB6YAwCIBgGQBgiSBwUyLjAuMqAHhiY&sclient=gws-wiz-serp"
+            target="_blank"
+            ><img src="{% static 'Media/Images/park.avif' %}" alt="Amusement Parks"
+          /></a>
+          <h3>Amusement Parks</h3>
+          <p>
+            Visit popular amusement parks like Nicco Park and Aquatica for a
+            fun-filled day with friends and family.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      style="
+        background-color: #008080;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+      "
+    >
+      <p>&copy; 2024 Yeahoo Kolkata. All Rights Reserved.</p>
+      <div>
+        <a
+          href="privacy.html"
+          style="color: white; text-decoration: none; margin-right: 1rem"
+          >Privacy Policy</a
+        >
+        <a href="terms.html" style="color: white; text-decoration: none"
+          >Terms of Service</a
+        >
+      </div>
+    </footer>
+
+    <!-- <script src="js/script.js"></script> -->
+  </body>
+</html>

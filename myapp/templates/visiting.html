@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visiting Places - Yahoo Kolkata</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/visiting.css' %}">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="/home/"><img src="{% static 'Media/Images/logo.png' %}" alt="Yahoo Kolkata logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/home/">Home</a></li>
+                <li><a href="/visiting/">Visiting Places</a></li>
+                <li><a href="/hotels/">Book Hotel & Travel Ticket</a></li>
+                <li><a href="/contact/">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="visiting-places">
+        <h2>Most Visited Places in Kolkata</h2>
+
+        <!-- Victoria Memorial Card -->
+        <div class="place-card">
+            <a href="https://www.google.com/search?q=Victoria+Memorial+Kolkata" target="_blank"><img src="{% static 'Media/Images/Victoriya_memorial.jpg' %}" alt="Victoria Memorial"></a>
+            <h3>Victoria Memorial</h3>
+            <p>The Victoria Memorial is a large marble monument on the Maidan in Central Kolkata, built between 1906 and 1921 by the British Raj. Dedicated to Queen Victoria, this iconic structure is surrounded by beautiful gardens.</p>
+            <a href="https://www.google.com/search?q=Victoria+Memorial+Kolkata" target="_blank">More info</a> 
+           
+        </div>
+
+        <!-- Howrah Bridge Card -->
+        <div class="place-card">
+            <a href="https://www.google.com/search?q=Howrah+Bridge+Kolkata"  target="_blank"><img src="{% static 'Media/Images/Howrha_bridge.jpg' %}" alt="Howrah Bridge"></a>
+            <h3>Howrah Bridge</h3>
+            <p>The Howrah Bridge spans the Hooghly River and connects Kolkata with Howrah. As a famous symbol of Kolkata, this cantilever bridge is an engineering marvel and one of the busiest bridges in the world.</p>
+            <a href="https://www.google.com/search?q=Howrah+Bridge+Kolkata" target="_blank">More info</a> 
+            
+        </div>
+
+        <!-- Indian Museum Card -->
+        <div class="place-card">
+           <a href="https://www.google.com/search?q=Indian+Museum+Kolkata" target="_blank"><img src="{% static 'Media/Images/Indian musiam.jpg' %}" alt="Indian Museum"></a>
+            <h3>Indian Museum</h3>
+            <p>The Indian Museum is the largest and oldest museum in Asia, offering a vast collection of artifacts, fossils, and cultural exhibits. It’s a must-visit for history and culture enthusiasts.</p>
+            <a href="https://www.google.com/search?q=Indian+Museum+Kolkata" target="_blank">More info</a> 
+            
+        </div>
+
+        <!-- Dakshineswar Kali Temple Card -->
+        <div class="place-card">
+            <a href="https://www.google.com/search?q=Dakshineswar+Kali+Temple+Kolkata" target="_blank"><img src="{% static 'Media/Images/Daskhinashor_temple.jpg' %}" alt="Dakshineswar Kali Temple"></a>
+            <h3>Dakshineswar Kali Temple</h3>
+            <p>The Dakshineswar Kali Temple, situated on the eastern bank of the Hooghly River, is dedicated to Goddess Kali. Built by Rani Rashmoni, it’s a prominent pilgrimage site and known for its spiritual significance.</p>
+            <a href="https://www.google.com/search?q=Dakshineswar+Kali+Temple+Kolkata" target="_blank">More info</a> 
+           
+        </div>
+
+        <!-- Science City Card -->
+        <div class="place-card">
+            <a href="https://www.google.com/search?q=Science+City+Kolkata" target="_blank"><img src="{% static 'Media/Images/Science_city.webp' %}" alt="Science City"></a>
+            <h3>Science City</h3>
+            <p>Science City Kolkata is one of the largest science museums in the Indian subcontinent, offering interactive exhibits, a space theater, and fun science activities for all ages.</p>
+            <a href="https://www.google.com/search?q=Science+City+Kolkata" target="_blank">More info</a> 
+        </div>
+        <div class="place-card">
+            <a href="https://www.google.com/search?q=princep+ghat+Kolkata" target="_blank"><img src="{% static 'Media/Images/Princep_ghat.jpg' %}" alt= "Princep ghat image"></a>
+            <h3>Princep Ghat</h3>
+            <p>Princep Ghat, located on the banks of River Hooghly, is a majestic structure famous for its Greek/ Gothic inlays. The beauty of Princep Ghat draws architecture and history buffs in large numbers. It was built in the year 1841, during the British Raj in India.</p>
+            <a href="https://www.google.com/search?q=princep+ghat+Kolkata" target="_blank">More info</a> 
+        </div>
+    </section>
+
+    <footer style="background-color:#008080; color:white; padding:1rem; text-align:center;">
+        <p>&copy; 2024 Yahoo Kolkata. All Rights Reserved.</p>
+        <div>
+            <a href="privacy.html" style="color:white; text-decoration:none; margin-right:1rem;">Privacy Policy</a>
+            <a href="terms.html" style="color:white; text-decoration:none;">Terms of Service</a>
+        </div>
+    </footer>
+</body>
+</html>

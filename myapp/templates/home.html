@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yeahoo Kolkata</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="{% static 'Media/Images/logo.png' %}" alt="Yahoo Kolkata logo">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="/home/">Home</a></li>
+                <li><a href="/visiting/">Visiting Places</a></li>
+                <li><a href="/food/">Foods</a></li>
+                <li><a href="/entertainment/">Entertainment</a></li>
+                <li><a href="/hotels/">Book Hotel & Travel Ticket</a></li>
+                <li><a href="/contact/">Contact Us</a></li>
+                <li><a href="{% url 'logout' %}" class="logout-btn">Logout</a></li> <!-- Logout Button -->
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Welcome to Kolkata</h2>
+        <p>Discover the beauty, history, and culture of Kolkata.</p>
+        <img src="{% static 'Media/Images/kol1.jpg' %}" alt="Kolkata overview image">
+    </section>
+
+    <section class="gallery">
+        <h3>Explore Kolkata</h3>
+        <div class="gallery-grid">
+            <img src="{% static 'Media/Images/tram.jpg' %}" alt="Tram in Kolkata">
+            <img src="{% static 'Media/Images/kolkata_street.jpg' %}" alt="Kolkata street view">
+            <img src="{% static 'Media/Images/metro.webp' %}" alt="Daskhinashor Temple">
+        </div>
+    </section>
+
+    <footer>
+        <h2>WELCOME TO YEAHOO KOLKATA GROUP !!</h2>
+        <p>&copy; 2024 Yeahoo Kolkata. All Rights Reserved.</p>
+        <div>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        document.querySelector(".menu-toggle").addEventListener("click", function() {
+            document.querySelector(".nav-links").classList.toggle("active");
+        });
+    </script>
+</body>
+</html>

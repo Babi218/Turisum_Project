@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotels - Yahoo Kolkata</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/hotel.css' %}">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="{% static 'Media/Images/logo.png' %}" alt="Yahoo Kolkata logo"> <!-- Ensure this is a transparent PNG -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/home/">Home</a></li>
+                <li><a href="/visiting/">Visiting Places</a></li>
+                <li><a href="/hotels/">Book Hotel & Travel Ticket</a></li>
+                <li><a href="/contact/">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hotel-list">
+        <div class="hotel-card">
+            <img src="{% static 'Media/Images/ticket.jpg' %}" alt="Ticket Image">
+            <h3>Click here to travel ticket booking</h3>
+            <img src="{% static 'Media/Images/travel.avif' %}" alt="Travel Image">
+            <button onclick="window.location.href='/booking/';">Book Now</button>
+        </div>
+
+        <h2>Popular Hotels in Kolkata</h2>
+
+        <div class="hotel-card">
+            <h3>See and book hotels in Kolkata by visiting their websites.</h3>
+            <button onclick="window.open('https://www.makemytrip.com/hotels/kolkata-hotels.html', '_blank');">Click to visit</button>
+        </div>
+    </section>
+
+    <footer style="background-color:#008080; color:white; padding:1rem; text-align:center;">
+        <p>&copy; 2024 Yeahoo Kolkata. All Rights Reserved.</p>
+        <div>
+            <a href="privacy.html" style="color:white; text-decoration:none; margin-right:1rem;">Privacy Policy</a>
+            <a href="terms.html" style="color:white; text-decoration:none;">Terms of Service</a>
+        </div>
+    </footer>
+</body>
+</html>

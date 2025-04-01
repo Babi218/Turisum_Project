@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Yahoo Kolkata</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/contact.css' %}">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="/home/"><img src="{% static 'Media/Images/logo.png' %}" alt="Yahoo Kolkata logo"></a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="/home/">Home</a></li>
+                <li><a href="/visiting/">Visiting Places</a></li>
+                <li><a href="/hotels/">Book Hotel & Travel Ticket</a></li>
+                <li><a href="/contact/">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact-info">
+        <h2>Contact Us</h2>
+        <div class="contact-details">
+            <img src="{% static 'Media/Images/contact.avif' %}" alt="Contact image">
+            <p><img src="{% static 'Media/Images/email-icon.png' %}" alt="Email Icon" class="icon"> yahoo_kolkata@example.com</p>
+            <p><img src="{% static 'Media/Images/mobicon.jpg' %}" alt="Phone Icon" class="icon"> +91 9876543210</p>
+            <p><img src="{% static 'Media/Images/adicon.jpg' %}" alt="Address Icon" class="icon"> 123 Park Street, Kolkata, India</p>
+        </div>
+    </section>
+
+    <footer>
+        <h2>THANK YOU, VISIT AGAIN!!</h2>
+        <h3>HAVE A SAFE JOURNEY</h3>
+        <p>&copy; 2024 Yahoo Kolkata. All Rights Reserved.</p>
+        <div class="footer-links">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        document.querySelector(".menu-toggle").addEventListener("click", function() {
+            document.querySelector(".nav-links").classList.toggle("active");
+        });
+    </script>
+</body>
+</html>
