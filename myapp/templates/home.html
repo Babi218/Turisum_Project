@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yeahoo Kolkata</title>
     {% load static %}
-    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/homes.css' %}">
 </head>
 <body>
     <header>
@@ -13,14 +13,14 @@
             <img src="{% static 'Media/Images/logo.png' %}" alt="Yahoo Kolkata logo">
         </div>
         <nav>
-            <ul class="nav-links">
+            <ul>
                 <li><a href="/home/">Home</a></li>
                 <li><a href="/visiting/">Visiting Places</a></li>
                 <li><a href="/food/">Foods</a></li>
                 <li><a href="/entertainment/">Entertainment</a></li>
                 <li><a href="/hotels/">Book Hotel & Travel Ticket</a></li>
                 <li><a href="/contact/">Contact Us</a></li>
-                <li><a href="{% url 'logout' %}" class="logout-btn">Logout</a></li> <!-- Logout Button -->
+                <li><a href="/logout/" class="logout-button">Logout</a></li>
             </ul>
         </nav>
     </header>
@@ -49,11 +49,5 @@
         </div>
     </footer>
 
-    <script>
-        // Mobile Menu Toggle
-        document.querySelector(".menu-toggle").addEventListener("click", function() {
-            document.querySelector(".nav-links").classList.toggle("active");
-        });
-    </script>
 </body>
 </html>
